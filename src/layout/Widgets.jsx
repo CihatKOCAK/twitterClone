@@ -1,12 +1,12 @@
 import React from 'react'
-i
+import { SearchIcon } from "../icons/Icon"
 
 const Widgets = () => {
     return (
-        <aside className="bg-green-200 w-80" > 
-        <div>
-
-        </div>  
+        <aside className="bg-green-200 w-80" >
+            <div>
+                <SearchIcon />
+            </div>
         </aside>
     )
 }

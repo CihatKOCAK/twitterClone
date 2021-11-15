@@ -2,9 +2,9 @@
 import SideLink from '../components/SideLink';
 import {
     HomeIcon, ExploreIcon, NotificationsIcon, MessagesIcon, BookmarksIcon, ListIcon, ProfileIcon, MoreIcon
-} from '../Icon'
+} from '../icons/Icon'
 import twitterLogo from "../images/twitter.svg"
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import UserBox from '../components/UserBox';
 
 
