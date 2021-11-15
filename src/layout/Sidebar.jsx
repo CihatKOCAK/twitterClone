@@ -1,8 +1,7 @@
 
 import SideLink from '../components/SideLink';
 import {
-    HomeIcon, ExploreIcon, NotificationsIcon, MessagesIcon, BookmarksIcon, ListIcon, ProfileIcon, MoreIcon, PopulerIcon,
-    ImageIcon, GIFIcon, PollIcon, EmojiIcon, ScheduleIcon, ReplyIcon, ReTweetIcon, LikeIcon, ShareIcon, SearchIcon
+    HomeIcon, ExploreIcon, NotificationsIcon, MessagesIcon, BookmarksIcon, ListIcon, ProfileIcon, MoreIcon
 } from '../Icon'
 import twitterLogo from "../images/twitter.svg"
 import React, { useEffect, useState } from "react";
