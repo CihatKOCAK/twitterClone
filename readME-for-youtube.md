@@ -1,21 +1,21 @@
-arkadaşlar merhaba Firestore kullanımında ufak değişiklikler olmuş, takılan arkadaşlara yardımcı olması dileği gerekli düzenlemeleri paylaşmak istiyorum: 
+arkadaşlar merhaba Firestore kullanımında ufak değişiklikler olmuş, takılan arkadaşlara yardımcı olması dileği gerekli düzenlemeleri paylaşmak istiyorum normalde yorum olarak yazmıştım ama youtube kabul etmedi lafı fazla uzatmadan yapmış olduğum değişiklikleri sizlerle paylaşayım: 
 
-ilk olarak firebase.js klasörümüze import olarak  '''import { getFirestore } from "firebase/firestore";''' ve db değişkeni için ise 
-
-'''const db = getFirestore();'''
-'''export default db;''' 
-
+ilk olarak firebase.js klasörümüze import olarak  ```import { getFirestore } from "firebase/firestore";``` ve db değişkeni için ise 
+```
+const db = getFirestore();
+export default db; 
+```
 satırlarını eklememiz gerekiyor.
 
 Tweet atma işlemlerindeki değişiklikleri ise şu şekilde düzelttim ilk olarak import satırımıza bu kodu eklememiz gerekiyor, 
-
-'''import { collection, doc, setDoc, serverTimestamp } from "firebase/firestore"; '''
-
+```
+import { collection, doc, setDoc, serverTimestamp } from "firebase/firestore"; 
+```
 sonrasında ise sendTweet fonksiyonumuzu bu şekilde düzenledim:
-
-'''const sendTweet = async () => {
+```
+const sendTweet = async () => {
         if (content !== '') {
-            const userRef = collection(db, 'feed');
+            const userRef = collection(db, "feed");
 
             await setDoc(doc(userRef), {
                 displayName: "iksipi",
@@ -31,22 +31,22 @@ sonrasında ise sendTweet fonksiyonumuzu bu şekilde düzenledim:
             });;
             setContent("");
         }
-    }'''
-
+    }
+```
 ve son olarak aldığımız tweetleri yazdırma kısmı kalıyor (Content.js sayfası)  import satırımıza bu kodu eklememiz gerekiyor.
-
-'''import { collection, onSnapshot } from "firebase/firestore"; '''
-
+```
+import { collection, onSnapshot } from "firebase/firestore"; 
+```
 ardından ise useEffect kodumuzu bu şekilde düzenledim:
-
-'''useEffect(() => {
+```
+useEffect(() => {
         onSnapshot(collection(db, 'feed'), (snapshot) => {
             setTweets(snapshot.docs.map(doc => doc.data()));
         });
-    }, []);'''
-
+    }, []);
+```
 zamana göre sıralama kısmını ise FeedList'e tweets elemanlarını atarken gerçekleştirdim.
-
-''' <FeedList tweets={tweets.sort((a, b) => b.timestamp - a.timestamp)} />'''
-
+```
+<FeedList tweets={tweets.sort((a, b) => b.timestamp - a.timestamp)} />
+```
  Yazarın Notu: Teşekkürler Didem, emeğine sağlık!
