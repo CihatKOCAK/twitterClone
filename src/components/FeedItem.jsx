@@ -8,7 +8,7 @@ const FeedItem = ({avatar, content, displayName, image, timestamp, userName}) =>
                 <img src={avatar} alt = "Profile" className="w-11 h-11 rounded-full"/>
                 <div className="flex-1">
                 <div className="flex items-center text-sm">
-                    <h4 className="font-bold">{displayName}</h4>
+                    <h4 className="font-bold dark:text-gray-300">{displayName}</h4>
                     <span className="ml-2 text-gray-dark dark:text-gray-300">{userName}</span>
                     <div className="mx-2 bg-gray-dark dark:text-gray-300 h-1 w-1 border rounded-full"></div>
                     <span className="dark:text-gray-300">
