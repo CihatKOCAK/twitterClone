@@ -1,4 +1,4 @@
-arkadaşlar merhaba Firestore kullanımında ufak değişiklikler olmuş, takılan arkadaşlara yardımcı olması dileği gerekli düzenlemeleri paylaşmak istiyorum normalde yorum olarak yazmıştım ama youtube kabul etmedi lafı fazla uzatmadan yapmış olduğum değişiklikleri sizlerle paylaşayım: 
+arkadaşlar merhaba Firestore kullanımında ufak değişiklikler olmuş, takılan arkadaşlara yardımcı olması dileği gerekli düzenlemeleri paylaşmak istiyorum: 
 
 ilk olarak firebase.js klasörümüze import olarak  ```import { getFirestore } from "firebase/firestore";``` ve db değişkeni için ise 
 ```
