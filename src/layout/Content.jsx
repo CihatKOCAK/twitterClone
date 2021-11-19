@@ -8,17 +8,13 @@ import FeedList from '../components/FeedList';
 
 const Content = () => {
     const [tweets, setTweets] = useState([]);
-
-
-
-
     useEffect(() => {
         onSnapshot(collection(db, 'feed'), (snapshot) => {
             setTweets(snapshot.docs.map(doc => doc.data()));
         });
     }, []);
 
-//
+    //
 
     console.log(tweets);
 
@@ -36,7 +32,7 @@ const Content = () => {
                 <TweetBox />
             </div>
             <Divider />
-            <FeedList tweets={tweets.sort((a,b) => b.timestamp - a.timestamp)} />
+            <FeedList tweets={tweets.sort((a, b) => b.timestamp - a.timestamp)} />
 
         </main>
     )
