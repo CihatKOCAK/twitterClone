@@ -20,7 +20,7 @@ const TweetBox = () => {
                 content,
                 timestamp: serverTimestamp(),
                 avatar: "https://pbs.twimg.com/profile_images/1457293343990456324/c2yR0CpQ_400x400.jpg",
-                image: "https://media.giphy.com/media/3o85xsGXVuYh8lM3EQ/giphy.gif"
+                image: "https://media.giphy.com/media/LdiCMqyuFCt72e6PXa/giphy.gif"
             }).then((result) => {
                 console.log("user added!")
             }).catch((err) => {
@@ -31,9 +31,9 @@ const TweetBox = () => {
     }
 
     return (
-        <div className="flex flex-col flex-1 mt-2 px-2">
+        <div className="flex flex-col flex-1 mt-2 px-2 dark:bg-black">
             <textarea
-                className="w-full text-xl placeholder-gray-dark outline-none overflow-hidden resize-none bg-transparent"
+                className="w-full text-xl placeholder-gray-dark dark:text-gray-300 dark:placeholder-gray-300 outline-none overflow-hidden resize-none bg-transparent"
                 placeholder="What's happening?"
                 onChange={e => setContent(e.target.value)}
                 value={content} />
