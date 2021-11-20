@@ -16,11 +16,11 @@
 
 # Tech
 
-<a href ="https://tailwindcss.com/"> Tailwindcss</a> 
-<a href ="https://reactjs.org/"> ReactJS</a> 
- <a href ="https://firebase.google.com/"> Firebase Firestore Database</a> 
- <a href ="https://create-react-app.dev/"> create-react-app</a> 
- <a href ="https://www.npmjs.com/package/react-twitter-widgets"> react-twitter-widgets</a> 
+<a href ="https://tailwindcss.com/"> Tailwindcss,</a> <br> 
+<a href ="https://reactjs.org/"> ReactJS,</a>  <br>
+<a href ="https://firebase.google.com/"> Firebase Firestore Database,</a>  <br>
+<a href ="https://create-react-app.dev/"> create-react-app,</a>  <br>
+<a href ="https://www.npmjs.com/package/react-twitter-widgets"> react-twitter-widgets,</a>  <br>
 
 # Appearance
 
